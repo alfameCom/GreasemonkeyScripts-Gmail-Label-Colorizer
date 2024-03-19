@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Planmill Today Column Highlighter
-// @version      1.0
+// @version      1.1
 // @description  Highlight the column from 'today' element to a specified link with adjustment
 // @match        *://online.planmill.com/*
 // @grant        none
