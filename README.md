@@ -1,51 +1,34 @@
-# Greasemonkey Scripts - Gmail Label Colorizer
 
-Gmail Label Colorizer is a Greasemonkey script designed to enhance your Gmail experience by allowing you to customize the colors of your Gmail labels in the sidebar and inbox, making it easier to organize and prioritize your emails at a glance.
+# Greasemonkey Scripts - Quality of Life Collection
 
-## Features
+This repository is a growing collection of Greasemonkey scripts aimed at enhancing user experience and productivity across various web applications. Each script in this collection is designed to address specific quality-of-life improvements, from automating mundane tasks to enhancing user interface interactions.
 
-- **Customize Label Colors:** Assign custom background and text colors to your Gmail labels.
-- **Improved Visibility:** Make important labels stand out with bright colors, or use subtle colors for less important labels.
-- **Dynamic Updates:** Script automatically updates label colors in real-time, reflecting changes as you navigate through your Gmail.
+## Available Scripts
+
+Below is a list of currently available scripts in this collection:
+
+### 1. Gmail Label Colorizer
+Customize the colors of your Gmail labels for better visual organization.
+
+### 2. Highlight Short Workdays
+Highlights days with less than 7.5 hours worked in certain time-tracking applications, excluding holidays, weekends, and future dates.
 
 ## Installation
 
-To use the Gmail Label Colorizer script, you'll need a user script manager like Greasemonkey (for Firefox) or Tampermonkey (for Chrome).
+To use these scripts, you will need a user script manager like Greasemonkey (for Firefox) or Tampermonkey (for Chrome).
 
 ### Steps:
 
 1. Install Greasemonkey (Firefox) or Tampermonkey (Chrome) extension in your browser.
-2. Click on the "Raw" button of the `gmail-label-colorizer.user.js` script in this repository.
-3. Your user script manager should prompt you to install the script. Confirm the installation.
-4. Once installed, navigate to your Gmail, and you should see your labels colored as per the script's configuration.
+2. Navigate to the desired script in this repository.
+3. Click on the "Raw" button of the `.user.js` file to open the installation prompt.
+4. Confirm the installation in your user script manager.
 
-## Configuration
+## Contribution
 
-The script comes with a predefined set of labels and colors, which can be customized to fit your needs. Open the `gmail-label-colorizer.user.js` file and modify the `labelColors` object with your desired labels and colors.
+Contributions are welcome! If you have ideas for new scripts or improvements to existing ones, feel free to fork this repository, make your changes, and submit a pull request.
 
-Example:
+## Disclaimer
 
-```javascript
-const labelColors = {
-  'Atlassian': '#3498db',
-  'Azure DevOps': '#9b59b6',
-  'Coding/Github': '#ffffff',
-  // Add more labels and their corresponding colors here
-};
-```
+These scripts are provided "as is", without warranty of any kind. Use them at your own risk. The authors and contributors are not responsible for any potential issues caused by using these scripts.
 
-### Usage
-
-Once installed and configured, the script runs automatically. You'll see your Gmail labels in the sidebar and inbox updated with the colors you've specified.
-
-### Contributing
-
-Contributions are welcome! If you'd like to improve the Gmail Label Colorizer script, please feel free to fork this repository, make your changes, and submit a pull request.
-
-### License
-
-This project is open-source and available under the MIT License. See the LICENSE file for more information.
-
-### Disclaimer
-
-This script is not affiliated with, authorized by, or in any way officially connected with Gmail or Google. The name "Gmail" and other related marks are trademarks of Google Inc.
