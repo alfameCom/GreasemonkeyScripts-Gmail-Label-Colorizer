@@ -7,11 +7,18 @@ This repository is a growing collection of Greasemonkey scripts aimed at enhanci
 
 Below is a list of currently available scripts in this collection:
 
+## Gmail
+
 ### 1. Gmail Label Colorizer
 Customize the colors of your Gmail labels for better visual organization.
 
-### 2. Highlight Short Workdays
+## Planmill
+
+### 1. Highlight Short Workdays
 Highlights days with less than 7.5 hours worked in certain time-tracking applications, excluding holidays, weekends, and future dates.
+
+### 2. Highlight Today Column
+Highlight the column from 'today' element to a specified link with adjustment
 
 ## Installation
 
