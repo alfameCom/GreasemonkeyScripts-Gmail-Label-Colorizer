@@ -10,8 +10,10 @@
     'use strict';
 
     const labelColors = {
-	// Add your labels and suitable background colors in this format. Text color will be set to white or black depending on contrast.
+	// Add your labels and suitable background colors into labelColors. Text color will be set to white or black depending on contrast.
 	// https://mail.google.com/mail/u/0/#settings/labels
+	// Sublabels must be named with full path: 
+	// 'Label/Sublabel: '#ffffff',
 	// 'Important': '#e67e22',
     };
 
