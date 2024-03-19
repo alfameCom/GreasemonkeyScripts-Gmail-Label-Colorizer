@@ -27,7 +27,7 @@
         highlightDiv.style.width = `${startRect.width}px`;
         highlightDiv.style.height = `${highlightHeight}px`;
         highlightDiv.style.backgroundColor = 'rgba(255, 255, 0, 0.2)';
-        highlightDiv.style.zIndex = '9999';
+        highlightDiv.style.zIndex = '899';
         highlightDiv.style.pointerEvents = 'none';
 
         document.body.appendChild(highlightDiv);
