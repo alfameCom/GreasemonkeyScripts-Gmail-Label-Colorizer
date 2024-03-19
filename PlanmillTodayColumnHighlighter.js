@@ -5,6 +5,7 @@
 // @match        *://online.planmill.com/*
 // @grant        none
 // @run-at       document-end
+// @updateURL    https://raw.githubusercontent.com/alfameCom/GreasemonkeyScripts-QOL-collection/main/PlanmillTodayColumnHighlighter.js
 // ==/UserScript==
 
 (function() {
