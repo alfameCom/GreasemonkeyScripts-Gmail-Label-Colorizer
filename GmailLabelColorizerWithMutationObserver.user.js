@@ -1,9 +1,10 @@
 // ==UserScript==
-// @name     Gmail Label Colorizer with MutationObserver
-// @version  8
-// @grant    none
-// @run-at   document-idle
-// @match    *://mail.google.com/*
+// @name     	Gmail Label Colorizer with MutationObserver
+// @version  	8
+// @grant    	none
+// @run-at   	document-idle
+// @match    	*://mail.google.com/*
+// @updateURL 	https://github.com/alfameCom/GreasemonkeyScripts-QOL-collection/edit/main/GmailLabelColorizerWithMutationObserver.user.js
 // ==/UserScript==
 
 (function() {
