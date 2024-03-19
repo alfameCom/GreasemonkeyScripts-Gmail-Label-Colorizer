@@ -1,41 +1,40 @@
+# Greasemonkey Scripts - QOL Collection
 
-# Greasemonkey Scripts - Quality of Life Collection
+This repository is a curated collection of Greasemonkey scripts designed to enhance and improve the quality of life while browsing the web. Each script aims to address specific annoyances or add useful functionalities to websites.
 
-This repository is a growing collection of Greasemonkey scripts aimed at enhancing user experience and productivity across various web applications. Each script in this collection is designed to address specific quality-of-life improvements, from automating mundane tasks to enhancing user interface interactions.
+## How to Install Scripts
 
-## Available Scripts
+To use scripts from this collection, you will need a user script manager extension such as Greasemonkey for Firefox or Tampermonkey for Chrome and other Chromium-based browsers.
 
-Below is a list of currently available scripts in this collection:
+### Installing a Script
 
-## Gmail
+1. Choose the script you want to install from this collection.
+2. Click on the "Raw" button next to the script file on GitHub. This action should prompt the user script manager to open an installation window.
+3. Review the script code to ensure it's safe and meets your needs, then confirm the installation by following the prompts provided by your user script manager.
 
-### 1. Gmail Label Colorizer
-Customize the colors of your Gmail labels for better visual organization.
+## How to Enable Automatic Updates
 
-## Planmill
+Scripts in this collection can be automatically updated if the `@updateURL` metadata is included in the script header and points to the raw URL of the script hosted on GitHub or a similar service.
 
-### 1. Highlight Short Workdays
-Highlights days with less than 7.5 hours worked in certain time-tracking applications, excluding holidays, weekends, and future dates.
+### Ensuring Your Script is Updatable
 
-### 2. Highlight Today Column
-Highlight the column from 'today' element to a specified link with adjustment
+Make sure the script includes the `@updateURL` metadata in its header, like so:
 
-## Installation
+```javascript
+// ==UserScript==
+// @name         Your Script Name Here
+// @description  Brief description of what the script does.
+// @version      1.0
+// @updateURL    https://raw.githubusercontent.com/YourGitHubUsername/YourRepositoryName/main/YourScriptName.user.js
+// ==/UserScript==
+```
 
-To use these scripts, you will need a user script manager like Greasemonkey (for Firefox) or Tampermonkey (for Chrome).
+With @updateURL specified, the user script manager will check the provided URL for updates, allowing you to automatically receive the latest version of the script.
 
-### Steps:
+### Contributing
 
-1. Install Greasemonkey (Firefox) or Tampermonkey (Chrome) extension in your browser.
-2. Navigate to the desired script in this repository.
-3. Click on the "Raw" button of the `.user.js` file to open the installation prompt.
-4. Confirm the installation in your user script manager.
+If you have improvements or new scripts to add to the collection, feel free to fork the repository, commit your changes, and submit a pull request.
 
-## Contribution
+### Disclaimer
 
-Contributions are welcome! If you have ideas for new scripts or improvements to existing ones, feel free to fork this repository, make your changes, and submit a pull request.
-
-## Disclaimer
-
-These scripts are provided "as is", without warranty of any kind. Use them at your own risk. The authors and contributors are not responsible for any potential issues caused by using these scripts.
-
+Scripts are provided "as is", without warranty of any kind. Users should review the scripts before installation to ensure they do not interfere with their browsing experience or pose security risks.
