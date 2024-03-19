@@ -7,6 +7,7 @@
 // @match        *://online.planmill.com/*
 // @grant        none
 // @run-at       document-end
+// @updateURL    https://github.com/alfameCom/GreasemonkeyScripts-QOL-collection/edit/main/PlanmillTotalTimeColorizer.user.js
 // ==/UserScript==
 
 (function() {
