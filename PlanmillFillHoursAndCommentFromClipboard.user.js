@@ -6,17 +6,17 @@
 // @grant        none
 // @run-at       document-end
 // @updateURL    https://github.com/alfameCom/GreasemonkeyScripts-QOL-collection/edit/main/PlanmillFillHoursAndCommentFromClipboard.user.js
+// @require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
 // ==/UserScript==
 
-(function() {
+(function($) {
     'use strict';
 
-    window.addEventListener('load', function() {
-        const newIconLi = document.createElement('li');
-        newIconLi.innerHTML = `<a href="#" class="tooltipped" data-tooltip="Fill from Clipboard"><i class="mdi mdi-content-paste" style="opacity: 1;"></i></a>`;
-        document.querySelector("#ts-tabs ul").appendChild(newIconLi);
+    $(document).ready(function() {
+        const newIconLi = $('<li><a href="#" class="tooltipped" data-tooltip="Fill from Clipboard"><i class="mdi mdi-content-paste" style="opacity: 1;"></i></a></li>');
+        $("#ts-tabs ul").append(newIconLi);
 
-        newIconLi.addEventListener('click', function(event) {
+        newIconLi.click(function(event) {
             event.preventDefault();
 
             navigator.clipboard.readText().then(text => {
@@ -24,16 +24,14 @@
                 const hours = parts[0];
                 const comment = parts.slice(2).join(" ");
 
-                const effortInput = document.querySelector(".effort-input");
-                const commentTextarea = document.querySelector(".commentvalue.input-field.materialize-textarea");
-
-                if (effortInput) effortInput.value = hours;
-                if (commentTextarea) commentTextarea.value = comment;
-
+                $('#normal1').val(hours).trigger('input').trigger('change');
+              	$('#normal1').focus().blur();
+                $('#normalc1').val(comment).trigger('input').trigger('change');
+              
                 console.log('Fields filled from clipboard:', { hours, comment });
             }).catch(err => {
                 console.error('Error reading from clipboard:', err);
             });
         });
     });
-})();
+})(jQuery);
