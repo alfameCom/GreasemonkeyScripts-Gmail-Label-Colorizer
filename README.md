@@ -4,7 +4,7 @@ This repository is a curated collection of Greasemonkey scripts designed to enha
 
 ## How to Install Scripts
 
-To use scripts from this collection, you will need a user script manager extension such as Greasemonkey for Firefox or Tampermonkey for Chrome and other Chromium-based browsers.
+To use scripts from this collection, you will need a user script manager extension such as [Greasemonkey for Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) or [Tampermonkey for Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) and other Chromium-based browsers.
 
 ### Installing a Script
 
