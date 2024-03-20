@@ -1,9 +1,8 @@
 // ==UserScript==
 // @name         Fill Fields from Clipboard on Icon Click
-// @version      1.0
+// @version      1.1
 // @description  Fill effort and comment fields from clipboard data on icon click.
 // @match        *://online.planmill.com/*
-// @grant        none
 // @run-at       document-end
 // @updateURL    https://github.com/alfameCom/GreasemonkeyScripts-QOL-collection/edit/main/PlanmillFillHoursAndCommentFromClipboard.user.js
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
