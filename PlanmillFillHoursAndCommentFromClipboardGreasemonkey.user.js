@@ -4,7 +4,7 @@
 // @description  Fill effort and comment fields from clipboard data on icon click.
 // @match        *://online.planmill.com/*
 // @run-at       document-end
-// @updateURL    https://github.com/alfameCom/GreasemonkeyScripts-QOL-collection/edit/main/PlanmillFillHoursAndCommentFromClipboard.user.js
+// @updateURL    https://github.com/alfameCom/GreasemonkeyScripts-QOL-collection/edit/main/PlanmillFillHoursAndCommentFromClipboardGreasemonkey.user.js
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
 // ==/UserScript==
 
