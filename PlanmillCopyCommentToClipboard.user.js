@@ -3,7 +3,6 @@
 // @version      1.2
 // @description  Copy comment text and effort from a time entry to the clipboard using a custom context menu.
 // @match        *://online.planmill.com/*/timesheet/*
-// @grant        none
 // @run-at       document-end
 // @updateURL    https://github.com/alfameCom/GreasemonkeyScripts-QOL-collection/edit/main/PlanmillCopyCommentToClipboard.user.js
 // ==/UserScript==
