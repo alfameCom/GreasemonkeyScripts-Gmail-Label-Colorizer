@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Context Menu for Effort and Comment Text Extraction to Clipboard
-// @version      1.2
+// @version      1.3
 // @description  Copy comment text and effort from a time entry to the clipboard using a custom context menu.
 // @match        *://online.planmill.com/*/timesheet/*
 // @run-at       document-end
