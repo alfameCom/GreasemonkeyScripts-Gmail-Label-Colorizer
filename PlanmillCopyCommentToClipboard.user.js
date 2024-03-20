@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Context Menu for Data Extraction from Tooltip
+// @name         Context Menu for Comment Text Extraction to Clipboard
 // @version      1.1
-// @description  Copy specific data from a tooltip to the clipboard using a custom context menu.
+// @description  Copy comment text from a time entry to the clipboard using a custom context menu.
 // @match        *://online.planmill.com/*/timesheet/*
 // @grant        none
 // @run-at       document-end
