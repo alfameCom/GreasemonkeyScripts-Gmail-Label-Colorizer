@@ -12,7 +12,6 @@
     'use strict';
 
     const customContextMenu = document.createElement('div');
-    customContextMenu.innerHTML = '<div id="copyComment">Kopioi kommentti</div>';
     customContextMenu.style.position = 'fixed';
     customContextMenu.style.zIndex = '10000';
     customContextMenu.style.backgroundColor = '#f0f0f0';
@@ -22,25 +21,35 @@
     document.body.appendChild(customContextMenu);
 
     document.addEventListener('contextmenu', function(event) {
+        customContextMenu.innerHTML = '';
+
         let target = event.target;
 
         if (target.matches('td[data-show-overlay="1"]')) {
             event.preventDefault();
 
+            document.querySelectorAll('#tooltip .left.limited').forEach((commentElement, index) => {
+                let comment = commentElement.textContent || 'Kommentti ei saatavilla';
+                let menuItem = document.createElement('div');
+                menuItem.textContent = `Kopioi: ${comment}`;
+                menuItem.style.padding = '2px';
+                menuItem.style.cursor = 'pointer';
+
+                menuItem.onclick = function() {
+                    navigator.clipboard.writeText(comment).then(() => {
+                        console.log('Kommentti kopioitu leikepöydälle:', comment);
+                        customContextMenu.style.display = 'none';
+                    }).catch(err => {
+                        console.error('Virhe kopioitaessa kommenttia leikepöydälle:', err);
+                    });
+                };
+
+                customContextMenu.appendChild(menuItem);
+            });
+
             customContextMenu.style.left = `${event.pageX}px`;
             customContextMenu.style.top = `${event.pageY}px`;
             customContextMenu.style.display = 'block';
-
-            document.getElementById('copyComment').onclick = function() {
-                const commentText = document.querySelector('#tooltip .left.limited')?.textContent || 'Kommentti ei saatavilla';
-
-                navigator.clipboard.writeText(commentText).then(() => {
-                    console.log('Kommentti kopioitu leikepöydälle:', commentText);
-                    customContextMenu.style.display = 'none';
-                }).catch(err => {
-                    console.error('Virhe kopioitaessa kommenttia leikepöydälle:', err);
-                });
-            };
         } else {
             customContextMenu.style.display = 'none';
         }
@@ -50,3 +59,4 @@
         customContextMenu.style.display = 'none';
     });
 })();
+
