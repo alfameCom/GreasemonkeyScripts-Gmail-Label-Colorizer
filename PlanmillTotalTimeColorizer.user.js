@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Planmill Specific Column Highlighter Based on Hours with Enhanced DOM Observing
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      2.1
 // @description  Highlight specific columns based on the hours from the 'timesheet-totals' table, handling dynamic content more effectively.
 // @author       You
 // @match        *://online.planmill.com/*
@@ -90,7 +90,7 @@
             highlightDiv.style.width = `${rect.width}px`;
             highlightDiv.style.height = `${document.documentElement.scrollHeight}px`;
             highlightDiv.style.backgroundColor = color;
-            highlightDiv.style.zIndex = '1000';
+            highlightDiv.style.zIndex = '899';
             highlightDiv.style.pointerEvents = 'none';
             document.body.appendChild(highlightDiv);
         } else {
