@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Planmill Specific Column Highlighter Based on Hours with Enhanced DOM Observing
 // @namespace    http://tampermonkey.net/
-// @version      2.1
+// @version      2.2
 // @description  Highlight specific columns based on the hours from the 'timesheet-totals' table, handling dynamic content more effectively.
 // @author       You
 // @match        *://online.planmill.com/*
@@ -83,12 +83,15 @@
         const thElements = document.querySelectorAll(`th:nth-child(${columnIndex}), td:nth-child(${columnIndex})`);
         if (thElements.length > 0) {
             const rect = thElements[0].getBoundingClientRect();
+            const endBoundaryElement = document.getElementById('timecard-toggle-btn');
+            const endBoundaryRect = endBoundaryElement.getBoundingClientRect();
+
             const highlightDiv = document.createElement('div');
             highlightDiv.style.position = 'fixed';
             highlightDiv.style.left = `${rect.left}px`;
             highlightDiv.style.top = `${rect.top + window.scrollY}px`;
             highlightDiv.style.width = `${rect.width}px`;
-            highlightDiv.style.height = `${document.documentElement.scrollHeight}px`;
+            highlightDiv.style.height = `${endBoundaryRect.top - (rect.top + window.scrollY)}px`; // Päivitetty korkeus
             highlightDiv.style.backgroundColor = color;
             highlightDiv.style.zIndex = '899';
             highlightDiv.style.pointerEvents = 'none';
@@ -97,4 +100,5 @@
             console.log(`Planmill Column Highlighter: No elements found for column ${columnIndex}, cannot highlight.`);
         }
     }
+
 })();
