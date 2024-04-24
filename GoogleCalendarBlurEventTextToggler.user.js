@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Blurs only the text content of calendar events in Google Calendar, with a toggle to turn the blurring on and off
 // @match        *://calendar.google.com/*
-// @updateURL		 https://github.com/alfameCom/GreasemonkeyScripts-QOL-collection/edit/main/GoogleCalendarBlurEventTextToggler.user.js
+// @updateURL    https://github.com/alfameCom/GreasemonkeyScripts-QOL-collection/edit/main/GoogleCalendarBlurEventTextToggler.user.js
 // @grant        none
 // ==/UserScript==
 
